@@ -1,3 +1,4 @@
+<!--
 <div class="thumbnail">
   <img src="http://placehold.it/320x150">
   <div class="caption">
@@ -11,3 +12,14 @@
     <nga-stars [rating]="product.rating" [count]="5"></nga-stars>
   </div>
 </div>
+-->
+<mat-card>
+  <mat-card-title>{{product.title}}</mat-card-title>
+  <img mat-card-image src="http://placehold.it/320x150">
+  <mat-card-content>
+    {{product.description}}
+  </mat-card-content>
+  <mat-card-actions>
+    <a mat-button color="accent" [routerLink]="['/products', product.id]">VIEW</a>
+  </mat-card-actions>
+</mat-card>
